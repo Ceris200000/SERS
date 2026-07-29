@@ -862,7 +862,7 @@
         function connectWebSocket() {
             // Динамическое определение протокола и хоста
             const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const WS_URL = `${protocol}//${window.location.host}/ws`;
+            const WS_URL = 'wss://backend-bimu.onrender.com/ws';
             
             try {
                 ws = new WebSocket(WS_URL);
