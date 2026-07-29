@@ -860,8 +860,7 @@
         let wsConnected = false;
 
         function connectWebSocket() {
-            // Динамическое определение протокола и хоста
-            const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+            // Жёстко задаём адрес WebSocket твоего бэкенда
             const WS_URL = 'wss://backend-bimu.onrender.com/ws';
             
             try {
